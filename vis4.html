@@ -30,11 +30,11 @@
         <li class="nav-item">
           <a class="nav-link" href="./vis2.html">Visualizations #2</a>
         </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="./vis3.html">Visualizations #3 <span class="sr-only">(current)</span></a>
-        </li>
         <li class="nav-item">
-            <a class="nav-link" href="./vis4.html">Visualizations #4</a>
+          <a class="nav-link" href="./vis3.html">Visualizations #3</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="./vis4.html">Visualizations #4 <span class="sr-only">(current)</span></a>
           </li>
         <li class="nav-item">
           <a class="nav-link" href="./compare.html">Comparison</a>
@@ -58,44 +58,59 @@
     <div class="row">
 
       <div class="col-md-3 bg-secondary">
-        <h3 class="card-title text-center">Tornado Severity</h3>
+        <h3 class="card-title text-center">Tornado Geography</h3>
         <hr>
         <p>
-            The National Weather Service classifies the severity of a tornado using the F Scale.  
-            Dr. T. Theodore Fujita developed the damage scale to relate the degree of damage to the intensity of the wind [F0-F5].
+            The National Weather Service also classifies tornado events to include location data.
+            By using Choropleth maps with GeoJSON, we can represent the data overlayed on a Google map of the United States.
         </p>
-        <p>The Enhanced F scale was adopted in 2007 and classifies damage as calibrated by engineers and meteorologists based on the most intense damage within the path [EF0-EF5]. </p>
+        <p>
+            
+        </p>
+        
       </div>
 
-      <div class="col-md-9 pad">
+      <div class="col-md-6 pad">
 
-        <img style="width:100%" alt="Tornado" src="Visualizations/Images_Tornado_Count_EF_Scale.png">
+        <h4 class="text-center">Average Annual Tornado Events</h4>
+        <img style="width:100%" alt="Tornado Geography 1" src="Visualizations/Images_Avg. Annual Tornadeos per 10K sq mi.png">
+        <hr>
+        <h4 class="text-center">Total Fatalities by State</h4>
+        <img style="width:100%" alt="Tornado Geography 2" src="Visualizations/Images_Total Tornado Fatalities per State.png">
 
+      </div>
+
+      <div class="col-md-3 table-primary">
+        <h3 class="card-title text-center">Questions Answered</h3>
+        <hr>
+
+        <ol>
+          <li>What ?</li>
+          <li>How ?</li>
+          <li>Are the ?</li>
+        </ol>
       </div>
 
     </div>
-    
     <div class="row">
-        <div class="col-md-6 table-primary">
-            <h3 class="card-title text-center">Questions Answered</h3>
-            <hr>
-
-            <ol>
-                <li>What ?</li>
-                <li>How ?</li>
-                <li>Are the ?</li>
-            </ol>
-        </div>
-
-        <div class="col-md-6 bg-warning">
-            <h4 class="text-center">Conclusions:</h4>
-            <hr>
-            <p>
-                This plot shows ....
-              </p>
-        </div>
+    <div class="col-md-12 bg-warning">
+      <h4 class="text-center">Conclusions:</h4>
+      <hr>
     </div>
+    <div class="col-md-12 bg-warning">
+        <p>
+        The first plot only represents the count of the annual tornado events.  
+        In other words, it shows the average annual frequency of tornado events (equalized by the State area) for the entire country.  
+        Indiana is ranked 19th for the average annual events.  
+        However, Indiana ranks 11th for the average annual events per 10k square miles.
+        </p>
+        <p>
+        On the above map, we can clearly see "Tornado Alley", the area of the United State where tornadoes are most frequent.  
+        Indiana also ranks 11th for the total number of tornado fatalities.
+        </p>
 
+    </div>
+    </div>
   </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

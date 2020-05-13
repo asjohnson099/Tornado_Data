@@ -1,10 +1,15 @@
-.div {
+.pad {
     padding-left: 10px;
     padding-top: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
 }
-.contain {
-    object-fit: contain;
-    }
+ol {
+    padding: 0;
+    margin-left: 1em;
+  }
+
+li {
+    margin-bottom: 15px;
+}
 
