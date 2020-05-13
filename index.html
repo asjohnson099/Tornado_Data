@@ -12,8 +12,8 @@
 <body>
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="#"><img alt="Brand" src="Resources/icons8-tornado-50.png"></a>
-    
+    <a class="navbar-brand" href="https://asjohnson099.github.io/Tornado_Data/"><img alt="Brand" src="Resources/icons8-tornado-50.png"></a>
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -24,19 +24,22 @@
           <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./vis1.html">Visualizations #1</a>
+          <a class="nav-link" href="./vis1.html">Visualizations #1 </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Visualizations #2</a>
+          <a class="nav-link" href="./vis2.html">Visualizations #2</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Visualizations #3</a>
+          <a class="nav-link" href="./vis3.html">Visualizations #3</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Comparison</a>
+            <a class="nav-link" href="./vis4.html">Visualizations #4</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./compare.html">Comparison</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Data Table</a>
+          <a class="nav-link" href="./data_table.html">Data Table</a>
         </li>
       </ul>
     </div>
@@ -52,54 +55,68 @@
     </div>
 
     <div class="row">
+      <div class="col-md-9">
+        <div class="bg-secondary text-center">
+          <h3>Measurements of Impact</h3>
+          <p>Two Decades of damage statistics, 1996-2019</p>
+        </div>
 
-      <div class="col-md-3 bg-secondary">
-        <h3 class="card-title text-center">Tornado Impacts</h3>
-        <hr>
-        <p>
-          The National Weather Service classifies the measurements of impact for a tornado event as three distinct results:
-        </p>
-        <ul>
-          <li>Deaths</li>
-          <li>Injuries</li>
-          <li>Property Damage</li>
-        </ul>
-        <p>NOAA's National Weather Service (NWS): Tornado events from the Storm Events database for 1996 to 2019. </p>
-        
+        <div class="row">
+          <div class="card mb-3" style="max-width: 50rem;">
+          <h3 class="card-header">Tornado Impacts</h3>
+          <div class="card-body">
+            <p class="card-text">The National Weather Service classifies the measurements of impact for a tornado event as three distinct results.</p>
+            <img style="width:30%" alt="Tornado Impacts" src="Visualizations/Images_Tornado Impacts by Year.png">
+            <a href="./vis1.html" class="card-link">Data Visualization #1</a>
+          </div>
+          </div>
+
+          <div class="card mb-3">
+          <h3 class="card-header">Tornado Frequency</h3>
+          <div class="card-body">
+            <p class="card-text">The National Weather Service aggregates measurements for each individual tornado event.  A tornado event is defined by a touchdown and a path.</p>
+            <img style="width:30%" alt="Tornado Frequency" src="Visualizations/Images_Tornado Frequency and Impacts by Year.png">
+            <a href="./vis2.html" class="card-link">Data Visualization #2</a>
+          </div>
+          </div>
+
+          <div class="card mb-3">
+          <h3 class="card-header">Tornado Severity</h3>
+          <div class="card-body">
+            <p class="card-text">The National Weather Service classifies the severity of a tornado using the Fujita Scale.</p>
+            <img style="width:30%" alt="Tornado Severity" src="Visualizations/Images_Tornado_Count_EF_Scale.png">
+            <a href="./vis3.html" class="card-link">Data Visualization #3</a>
+          </div>
+          </div>
+
+          <div class="card mb-3">
+          <h3 class="card-header">Tornado Geography</h3>
+          <div class="card-body">
+            <p class="card-text">The National Weather Service also classifies tornado events to include location data.</p>
+            <img style="width:30%" alt="Tornado Geography 1" src="Visualizations/Images_Avg. Annual Tornadeos per 10K sq mi.png">
+            <img style="width:30%" alt="Tornado Geography 2" src="Visualizations/Images_Total Tornado Fatalities per State.png">
+            <a href="./vis4.html" class="card-link">Data Visualization #4</a>
+          </div>
+          </div>
+        </div>
       </div>
-
-      <div class="col-md-6">
-
-        <img style="width:100%" alt="Tornado" src="Visualizations/Images_Tornado Impacts by Year.png">
-
-      </div>
-
+    
       <div class="col-md-3 table-primary">
-        <h3 class="card-title text-center">Questions Answered</h3>
+        <h3 class="card-title text-center">Questions to Answer:</h3>
         <hr>
 
         <ol>
-          <li>What are the "Measurements of Impact" for Tornado events?</li>
-          <li>How does the impact data for Tornadoes look over time?</li>
-          <li>Are the Measurements of Impact correlated with each other?</li>
+          <li>How do the "Measurements of impact" look year over year?</li>
+          <li>Are the measurements of impact correlated with each other?</li>
+          <li>Does frequency of tornado events have a direct relationship with the measurements of impact?</li>
+          <li>Does an F5 event do more damage than a large number of F1 events?</li>
+          <li>Where do most experience frequency and severity of tornadoes?</li>
+          <li>Where does Indiana rank for tornado events among the 50 states?</li>
         </ol>
       </div>
-
-    </div>
-    <div class="row">
-    <div class="col-md-12 bg-warning">
-      <h4 class="text-center">Conclusions:</h4>
-    </div>
-    <div class="col-md-12 bg-warning">
-      <p>
-        As you can see in the plot, the three measurements of impact are correlated.  
-        In fact, by plotting the Injuries on one axis and the Damage on a second axis, we can see them overlapping.
-        The most destructive year for tornadoes was 2011.  
-        All of the measurements of impact are nearly 3 times higher than any of the other years.
-      </p>
-    </div>
     </div>
   </div>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

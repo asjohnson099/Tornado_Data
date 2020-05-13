@@ -24,11 +24,11 @@
         <li class="nav-item">
           <a class="nav-link" href="./index.html">Home </a>
         </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="./vis1.html">Visualizations #1 <span class="sr-only">(current)</span></a>
-        </li>
         <li class="nav-item">
-          <a class="nav-link" href="./vis2.html">Visualizations #2</a>
+          <a class="nav-link" href="./vis1.html">Visualizations #1 </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./vis2.html">Visualizations #2 <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./vis3.html">Visualizations #3</a>
@@ -58,51 +58,46 @@
     <div class="row">
 
       <div class="col-md-3 bg-secondary">
-        <h3 class="card-title text-center">Tornado Impacts</h3>
+        <h3 class="card-title text-center">Tornado Frequency</h3>
         <hr>
         <p>
-          The National Weather Service classifies the measurements of impact for a tornado event as three distinct results:
+          The National Weather Service data aggregates measurements for each individual tornado event.  A tornado event is defined by a touchdown and a path.  Therefore, one storm cell could cause many tornado events depending on the behavior.  
         </p>
-        <ul>
-          <li>Deaths</li>
-          <li>Injuries</li>
-          <li>Property Damage</li>
-        </ul>
-        <p>NOAA's National Weather Service (NWS): Tornado events from the Storm Events database for 1996 to 2019. </p>
-        
+        <p>
+            By counting the number of tornado events, we can gauge the frequency of tornadoes in a given year and compare that against the other measurements of impact.
+        </p>     
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-9">
 
-        <img style="width:100%" alt="Tornado" src="Visualizations/Images_Tornado Impacts by Year.png">
+        <img style="width:100%" alt="Tornado" src="Visualizations/Images_Tornado Frequency and Impacts by Year.png">
 
       </div>
-
-      <div class="col-md-3 table-primary">
-        <h3 class="card-title text-center">Questions Answered</h3>
-        <hr>
-
-        <ol>
-          <li>What are the "Measurements of Impact" for Tornado events?</li>
-          <li>How does the impact data for Tornadoes look over time?</li>
-          <li>Are the Measurements of Impact correlated with each other?</li>
-        </ol>
-      </div>
-
     </div>
+
     <div class="row">
-    <div class="col-md-12 bg-warning">
-      <h4 class="text-center">Conclusions:</h4>
-      <hr>
-    </div>
-    <div class="col-md-12 bg-warning">
-      <p>
-        As you can see in the plot, the three measurements of impact are correlated.  
-        In fact, by plotting the Injuries on one axis and the Damage on a second axis, we can see them overlapping.
-        The most destructive year for tornadoes was 2011.  
-        All of the measurements of impact are nearly 3 times higher than any of the other years.
-      </p>
-    </div>
+        <div class="col-md-3 table-primary">
+            <h3 class="card-title text-center">Questions Answered</h3>
+            <hr>
+    
+            <ol>
+              <li>How does the frequency of Tornadoes look over time?</li>
+              <li>Are the Measurements of Impact correlated with the frequency?</li>
+            </ol>
+          </div>
+        <div class="col-md-9 bg-warning">
+            <h4 class="text-center">Conclusions:</h4>
+            <hr>
+            <p>
+                Represented in the scatter plot above, the frequency of tornado events is plotted on the x-axis.
+                Then, the measurements of impact are represented by the size of the bubble, for amount of property damage, and by the color of the bubble, for the amount of deaths.
+            </p>
+            <p>
+                We can see that the frequency and impact are NOT directly correlated.  
+                In 2013, there were fewer tornado events, but the damage bubble was much bigger.  
+                In 2004, there were many tornado events, but the damage bubble is very small.
+            </p>
+        </div>
     </div>
   </div>
 
