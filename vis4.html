@@ -24,18 +24,15 @@
         <li class="nav-item">
           <a class="nav-link" href="./index.html">Home </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./vis1.html">Visualizations #1</a>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Visualizations</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="./vis1.html">Tornado Impacts</a>
+            <a class="dropdown-item" href="./vis2.html">Tornado Frequency</a>
+            <a class="dropdown-item" href="./vis3.html">Tornado Severity</a>
+            <a class="dropdown-item active" href="./vis4.html">Tornado Geography <span class="sr-only">(current)</span></a>
+          </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./vis2.html">Visualizations #2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./vis3.html">Visualizations #3</a>
-        </li>
-        <li class="nav-item active">
-            <a class="nav-link" href="./vis4.html">Visualizations #4 <span class="sr-only">(current)</span></a>
-          </li>
         <li class="nav-item">
           <a class="nav-link" href="./compare.html">Comparison</a>
         </li>
@@ -65,14 +62,15 @@
             By using Choropleth maps with GeoJSON, we can represent the data overlayed on a Google map of the United States.
         </p>
         <p>
-            
+            After first looking at only the unadjusted number of tornado events, we decided to more accurately represent the average frequency by a factor of count per 10,000 square miles.  
+            Considering Texas is large and Indiana is small, it better represents the impact of tornado events on the population.
         </p>
         
       </div>
 
       <div class="col-md-6 pad">
 
-        <h4 class="text-center">Average Annual Tornado Events</h4>
+        <h4 class="text-center">Average Annual Tornado Events<br><small> per 10,000 sq miles</small></h4>
         <img style="width:100%" alt="Tornado Geography 1" src="Visualizations/Images_Avg. Annual Tornadeos per 10K sq mi.png">
         <hr>
         <h4 class="text-center">Total Fatalities by State</h4>
@@ -85,10 +83,16 @@
         <hr>
 
         <ol>
-          <li>What ?</li>
-          <li>How ?</li>
-          <li>Are the ?</li>
+          <li>What is the most common area of the United States impacted by tornado events?</li>
+          <li>Do tornado events impact some states more severely than others?</li>
+          <li>How does Indiana rank among other states for tornado frequency and impact?</li>
         </ol>
+
+        <br><br>
+        <div class="row text-center bg-secondary pad">
+        <a href="https://butler.bootcampcontent.com/zunicd/project_one" target="_blank"><img alt="Brand" src="Resources/icons8-tornado-50.png">Data Analytics Bootcamp</a>
+        Please check out more information in our GitLab Project repository.
+      </div>
       </div>
 
     </div>
@@ -107,6 +111,7 @@
         <p>
         On the above map, we can clearly see "Tornado Alley", the area of the United State where tornadoes are most frequent.  
         Indiana also ranks 11th for the total number of tornado fatalities.
+        Based on all of the impact measurements, we can safely represent that tornado severity is often worse for southern States.
         </p>
 
     </div>

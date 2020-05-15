@@ -24,18 +24,15 @@
         <li class="nav-item">
           <a class="nav-link" href="./index.html">Home </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./vis1.html">Visualizations #1</a>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Visualizations</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="./vis1.html">Tornado Impacts</a>
+            <a class="dropdown-item" href="./vis2.html">Tornado Frequency</a>
+            <a class="dropdown-item active" href="./vis3.html">Tornado Severity <span class="sr-only">(current)</span></a>
+            <a class="dropdown-item" href="./vis4.html">Tornado Geography</a>
+          </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./vis2.html">Visualizations #2</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="./vis3.html">Visualizations #3 <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="./vis4.html">Visualizations #4</a>
-          </li>
         <li class="nav-item">
           <a class="nav-link" href="./compare.html">Comparison</a>
         </li>
@@ -81,7 +78,7 @@
             <hr>
 
             <ol>
-                <li>What are the most common severity of tornado events?</li>
+                <li>What are the most common severity measurements of tornado events?</li>
                 <li>How are the frequency of tornado events and the measurements of impact related for each severity measurement?</li>
                 <li>Does an F5 event do more damage than a large number of F1 events?</li>
             </ol>
@@ -91,7 +88,13 @@
             <h4 class="text-center">Conclusions:</h4>
             <hr>
             <p>
-                This plot shows ....
+                This plot shows that the counts, or frequency, of tornado events decline significantly as the severity measures increase.
+                The remaining measurements of impact are based on the average annual impact for ALL tornado events of that severity.  
+                In other words, average annual fatalities for all combined EF0 events are significantly lower than for all EF5 events.
+              </p>
+              <p>
+                The average annual impact for all combined EF3 events is slightly more than for all EF5 events.  
+                Despite the rare occurance of EF5 events, the impact of a single event is dramatic.
               </p>
         </div>
     </div>
